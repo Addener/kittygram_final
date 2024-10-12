@@ -33,7 +33,7 @@ jobs:
     - name: Test with flake8 and django tests
       env:
         POSTGRES_USER: kittygram_user
-        POSTGRES_PASSWORD: django_password
+        POSTGRES_PASSWORD: kittygram_password
         POSTGRES_DB: kittygram
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
@@ -138,7 +138,7 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./gateway/
+          context: ./nginx/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
           tags: addener/kittygram_gateway:latest
