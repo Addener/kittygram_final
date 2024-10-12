@@ -171,4 +171,4 @@ Kittygram - сервис для любителей котиков.
 
 Алексей Ужва
 
-https://img.shields.io/badge/Telegram-464646?style=flat-square&logo  @uzhvaaa
+Tg: @uzhvaaa

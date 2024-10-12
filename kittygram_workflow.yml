@@ -1,6 +1,9 @@
 name: Main Kittygram workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   tests:
@@ -152,9 +155,6 @@ jobs:
           sudo docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
           sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /static/static/
           sudo docker system prune -af
-    only:
-    - master
-    - main
 
   send_message:
     runs-on: ubuntu-latest
