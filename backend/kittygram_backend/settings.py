@@ -12,7 +12,7 @@ SECRET_KEY = get_random_secret_key()
 
 DEBUG = os.getenv('DEBUG', default=False)
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1').split(',')
+ALLOWED_HOSTS = ['123.123.123.123', 'localhost', 'addenerinfrasprint1.ddns.net']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
