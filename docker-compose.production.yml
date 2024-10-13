@@ -3,7 +3,7 @@ version: '3'
 volumes:
   pg_data:
   static:
-  media
+  media:
 
 services:
   db:
@@ -29,5 +29,5 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static:/static/
+      - static:/static
       - media:/app/media/
