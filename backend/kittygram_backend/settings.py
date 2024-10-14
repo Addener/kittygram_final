@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='token')
 
-DEBUG = os.getenv('DEBUG', default='false').lower() == 'true'
+DEBUG = os.getenv('DEBUG', default=False) == 'true'
 
 ALLOWED_HOSTS = ['123.123.123.123', 'localhost', 'addenerinfrasprint1.ddns.net']
 
